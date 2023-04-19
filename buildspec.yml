@@ -26,6 +26,6 @@ phases:
 artifacts:
   files:
     - '**/*'
-  base-directory: app
+  base-directory:
   name: CICDartifact
   discard-paths: no
