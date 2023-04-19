@@ -23,7 +23,7 @@ phases:
       - docker push $REPOSITORY_URI:latest
       - docker push $REPOSITORY_URI:latest
       - echo Writing image definitions file...
-      - printf '[{"name":"$REPOSITORY_URI:latest","imageUri":"image_URI"}]' > imagedefinitions.json
+      - printf '[{"name":"$REPOSITORY_URI","imageUri":"image_URI"}]' > imagedefinitions.json
 artifacts:
     files:
         - imagedefinitions.json
