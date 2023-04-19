@@ -23,3 +23,5 @@ phases:
       - docker push $REPOSITORY_URI:latest
       - docker push $REPOSITORY_URI:latest
       - echo Writing image definitions file...
+artifacts:
+  enabled: false
