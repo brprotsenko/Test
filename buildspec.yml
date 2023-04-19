@@ -23,6 +23,6 @@ phases:
       - docker push $REPOSITORY_URI:latest
       - docker push $REPOSITORY_URI:latest
       - echo Writing image definitions file...
-      - printf '[{"name":"CICDTaskDEF","imageUri":"%s"}]' 603929372404.dkr.ecr.eu-north-1.amazonaws.com/cicddemo:latest > imagedefinitions.json
-  artifacts:
-    files: imagedefinitions.json
+      - printf '[{"name":"CICDTaskDEF","imageUri":"%s"}]' 603929372404.dkr.ecr.eu-north-1.amazonaws.com/cicddemo:$IMAGE_TAG > imagedefinitions.json
+artifacts:
+  files: imagedefinitions.json
